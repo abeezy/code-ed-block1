@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CodeEd: Block1</title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/bootstrap-responsive.css" rel="stylesheet">
+        <link href="css/docs.css" rel="stylesheet">
+        <link href="css/codeed.css" rel="stylesheet">
+        <link href="js/google-code-prettify/prettify.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Navbar
+             ================================================== -->
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="brand" href="http://www.codeed.org/">CodeEd</a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li class="">
+                                <a href="/index.html">Home</a>
+                            </li>
+                            <li class="">
+                                <a href="/lesson1.html">Lesson 1</a>
+                            </li>
+                            <li class="active">
+                            	<a href="/lesson2.html">Lesson 2</a>
+                            </li>
+                            <li class="">
+                            	<a href="/lesson3.html">Lesson 3</a>
+                            </li>
+                            <li class="">
+                                <a href="/wizard">HTML Wizard</a>
+                            </li>
+                            <li class="">
+                                <a href="/game.html">HTML Tag Game</a>
+                            </li>
+                            <li class="">
+                            	<a href="http://block2.codeed.org/lesson1.html">HTML Tag Cheat Sheet</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <header class="jumbotron subhead" id="overview">
+            <div class="container">
+                <h1>CodeEd</h1>
+                <p class="lead">Lesson 2: Add Images and Colors</p>
+            </div>
+        </header>
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="span3 bs-docs-sidebar">
+                    <ul class="nav nav-list bs-docs-sidenav">
+                        <li><a href="#imgtag"><i class="icon-chevron-right"></i> 1. The Image Tag</a></li>
+                        <li><a href="#brtag"><i class="icon-chevron-right"></i> 2. The Line Break Tag</a></li>
+                        <li><a href="#ptag"><i class="icon-chevron-right"></i> 3. The Paragraph Tag</a></li>
+
+                        <li><a href="#bgcolors"><i class="icon-chevron-right"></i> 4. Adding Background Colors</a></li>
+                        <li><a href="#bgimages"><i class="icon-chevron-right"></i> 5. Adding Background Images</a></li>
+                    </ul>
+                </div>
+
+                <div class="span9">
+
+                    <section id="ptag">
+                        <h1>The Paragraph Tag</h1>
+                        <p>
+                        	The &lt;p&gt; tag is used for blocks of text. For example, to make this section on the Club Penguin website:
+							<br /><br />
+							<img src="/img/clubpenguin.png"/ style="border: 1px solid #ccc;">
+							<br /><br />
+							We use this code:
+							<br />
+<pre style="width: 300px">
+&lt;p&gt;
+  Submit your artwork, get new 
+  desktop wallpapers, coloring 
+  pages and the latest comics
+&lt;/p&gt;
+</pre>
+                        </p>    
+                    </section>
+					
+					<section id="imgtag">
+                        <h1>The Image Tag</h1>
+                        <p>
+                        	There are 3 parts to an image tag:
+						</p>
+						<img src="/img/imagetag.jpg"/>
+
+                        </p>
+                    </section>
+                    
+					
+                    <section id="brtag">
+                        <h1>The Line Break Tag</h1>
+                        <p>
+                        	The &lt;br /&gt; tag is used to make spaces between things on your page. Just pressing enter isn't enough!
+                        </p>
+<pre style="width: 450px">
+&lt;img src="http://block1.codeed.org/img/kitten.jpg" /&gt; 
+Text about this kitten
+</pre>
+						<p>
+						Without a &lt;br /&gt; tag, text you type underneath an image will show up next to it like this:	
+						</p>
+						<img src="http://block1.codeed.org/img/kitten.jpg" width="200" />Text about this kitten
+						<br /><br />
+						</p>
+<pre style="width: 450px">
+&lt;img src="http://kitten.com" /&gt; 
+&lt;br /&gt;
+Text about this kitten
+</pre>					
+						<br />
+						<p>
+							But if we add a &lt;br /&gt; tag, it moves underneath:
+						</p>
+						<img src="http://block1.codeed.org/img/kitten.jpg" width="200" /><br />Text about this kitten
+
+                    </section>
+
+                    <section id="bgcolors">
+                        <h1>Adding Background Colors</h1>
+                        <p>
+							To add a background color to a page, we add the following code to our body tag:
+						</p>
+<pre style="width: 300px">
+&lt;body bgcolor="purple"&gt;
+</pre>
+<br />
+						<p>
+							We can also use codes to get even more colors! The code for turquoise is #40E0D0. So we just replace the color name with the code:
+						</p>
+<pre style="width: 300px">
+&lt;body bgcolor="#40E0D0"&gt;
+</pre>
+						<p>
+							To get more codes, we can use a HTML <a href="http://www.w3schools.com/tags/ref_colorpicker.asp">color picker</a>.
+						</p>
+                    </section>
+
+                    <section id="bgimages">
+                        <h1>Adding Background Images</h1>
+						<p>
+							To add a background image to a page, we add the following code to our body tag with the location of the image we want to use:
+						</p>
+<pre style="width: 550px">
+&lt;body background="http://block1.codeed.org/img/background.jpg"&gt;
+</pre>
+						<p>
+
+                    </section>
+
+
+                </div>
+
+            </div><!-- /row -->
+
+        </div><!-- /#container -->
+
+
+
+    <!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>Designed using <a href="https://github.com/twitter/bootstrap/wiki">Twitter Bootstrap</a>.</p>
+        <ul class="footer-links">
+          <li><a href="mailto:block1@codeed.org?subject=help!">Get Help</a></li>
+          <li><a href="http://block2.codeed.org">Visit Block2</a></li>
+        </ul>
+      </div>
+    </footer>
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/google-code-prettify/prettify.js"></script>
+    <script src="/js/bootstrap-transition.js"></script>
+    <script src="/js/bootstrap-alert.js"></script>
+    <script src="/js/bootstrap-modal.js"></script>
+    <script src="/js/bootstrap-dropdown.js"></script>
+    <script src="/js/bootstrap-scrollspy.js"></script>
+    <script src="/js/bootstrap-tab.js"></script>
+    <script src="/js/bootstrap-tooltip.js"></script>
+    <script src="/js/bootstrap-popover.js"></script>
+    <script src="/js/bootstrap-button.js"></script>
+    <script src="/js/bootstrap-collapse.js"></script>
+    <script src="/js/bootstrap-carousel.js"></script>
+    <script src="/js/bootstrap-typeahead.js"></script>
+    <script src="/js/bootstrap-affix.js"></script>
+    <script src="/js/application.js"></script>
+    <script src="/js/codeed.js"></script>
+
+    </body>
+</html>

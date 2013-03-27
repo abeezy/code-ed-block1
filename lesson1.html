@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CodeEd: Block1</title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/bootstrap-responsive.css" rel="stylesheet">
+        <link href="css/docs.css" rel="stylesheet">
+        <link href="css/codeed.css" rel="stylesheet">
+        <link href="js/google-code-prettify/prettify.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Navbar
+             ================================================== -->
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="brand" href="http://www.codeed.org/">CodeEd</a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li class="">
+                                <a href="/index.html">Home</a>
+                            </li>
+                            <li class="active">
+                                <a href="/lesson1.html">Lesson 1</a>
+                            </li>
+                            <li class="">
+                            	<a href="/lesson2.html">Lesson 2</a>
+                            </li>
+                            <li class="">
+                            	<a href="/lesson3.html">Lesson 3</a>
+                            </li>
+                            <li class="">
+                                <a href="/wizard">HTML Wizard</a>
+                            </li>
+                            <li class="">
+                                <a href="/game.html">HTML Tag Game</a>
+                            </li>
+                            <li class="">
+                            	<a href="http://block2.codeed.org/lesson1.html">HTML Tag Cheat Sheet</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <header class="jumbotron subhead" id="overview">
+            <div class="container">
+                <h1>CodeEd</h1>
+                <p class="lead">Lesson 1: Build a text-only webpage.</p>
+            </div>
+        </header>
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="span3 bs-docs-sidebar">
+                    <ul class="nav nav-list bs-docs-sidenav">
+                        <li><a href="#internet"><i class="icon-chevron-right"></i> 1. Learn how the Internet works</a></li>
+                        <li><a href="#html"><i class="icon-chevron-right"></i> 2. Understanding HTML</a></li>
+                        <li><a href="#geany"><i class="icon-chevron-right"></i> 3. Meeting Geany</a></li>
+                        <li><a href="#play"><i class="icon-chevron-right"></i> 4. Playing with HTML</a></li>
+                        <li><a href="#online"><i class="icon-chevron-right"></i> 5. Viewing our web pages online!</a></li>
+                    </ul>
+                </div>
+
+                <div class="span9">
+
+                    <section id="internet">
+                        <h1>How the Internet works</h1>
+                        <p>
+                            <img src="http://block1.codeed.org/img/lesson1/internet.jpg" style="width: 100%" />
+                            <ul>
+                                <li>The internet connects computers to each other.</li>
+                                <li>In order for people to communicate to each other, they use a language called <strong>HTML</strong> to make webpages.</li>
+                                <li>Many people can see a webpage at the same time!</li>
+                            </ul>
+
+                        </p>
+                    </section>
+
+                    <section id="html">
+                        <img src="http://block1.codeed.org/img/lesson1/globe.gif" style="float: right; height: 230px;" />
+                        <h1>Understanding HTML</h1>
+                        <h3>What is HTML?</h3>
+                        <p>
+                            <ul>
+                                <li>HTML allows us to do <strong>bold</strong>, <em>curvy</em>, <span style="font-size: 24px;">big</span>, and <span style="color: pink">colorful</span> text.</li>
+                                <li>Without HTML we would just have plain, boring text.</li>
+                                <li>You can even do <span style="background-color: red; color: white;">background colors</span>, and use images like this one of a dog: <br /><br />
+                                   <a href="http://block1.codeed.org/img/lesson1/aggie.jpg"><img style="width: 100px;" src="http://block1.codeed.org/img/lesson1/aggie.jpg" /></a></li>
+                            </ul>
+                        </p>
+
+                        <h3>What does HTML look like?</h3>
+                        <p>HTML looks like this:</p>
+
+                        <div style="max-width: 400px; background-color: lightyellow; padding: 10px;">
+                            <pre class="prettyprint">Only one &lt;b&gt;word&lt;/b&gt; in this sentence is bold.</pre>
+
+                            <pre class="prettyprint">We only &lt;u&gt;under&lt;/u&gt;line part of a word here.</pre>
+
+                            <pre class="prettyprint">&lt;i&gt;This third sentence&lt;/i&gt; has an italicized phrase.</pre>
+                        </div><br />
+
+                        <p>And looks like this inside a web browser:</p><br />
+                        <div style="max-width: 400px; background-color: lightyellow; padding: 10px;">
+                            Only one <b>word</b> in this sentence is bold.<br /><br />
+
+                            We only <u>under</u>line part of a word here.<br /><br />
+
+                            <i>This third sentence</i> has an italicized phrase.<br />
+                        </div><br />
+
+
+                        <p>Let's create live examples in the <a href="http://block1.codeed.org/wizard/">HTML Wizard</a>.</p>
+                    </section>
+
+
+                    <section id="geany">
+                        <img src="http://block1.codeed.org/img/lesson1/geany_icon.jpg" style="text-align: center;height: 230px;" />
+                        <h1>Meeting Geany</h1>
+                        <h3>The HTML Editor</h3>
+                        <a href="http://block1.codeed.org/img/lesson1/geany_dock.jpg"><img src="http://block1.codeed.org/img/lesson1/geany_dock.jpg" style="width: 200px; display: block; float: left; padding-right: 10px;" /></a><br />
+                        <p>Click the Geany icon to begin! <!--and lets try examples from the HTML Wizard.--></p>
+                        <br /><br />
+                        <b>Useful Keyboard Shortcuts</b>
+						<table class="shortcuts">
+							<tr>
+								<td>
+									Save
+								</td>
+								<td>
+									Ctrl + S
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Open
+								</td>
+								<td> 
+									Ctrl + O
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Switch screens
+								</td>
+								<td>
+									Ctrl + Tab
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Refresh browser
+								</td>
+								<td>
+									Ctrl + R
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Quit
+								</td>
+								<td>
+									Ctrl + Q
+								</td>
+							</tr>
+						</table>
+
+                    </section>
+
+                    <section id="play" style="clear:both;">
+                        <h1>Playing with HTML</h1>
+                        <p>Experiment with Geany with the following tags:
+
+<pre class="prettyprint">
+  &lt;b&gt;bold&lt;/b&gt;
+  &lt;i&gt;italics&lt;/i&gt;
+  &lt;h1&gt;heading 1&lt;/h1&gt;
+  &lt;h2&gt;heading 2&lt;/h2&gt;
+  &lt;h3&gt;heading 3&lt;/h3&gt;
+</pre>
+
+Which should look like:
+
+                            <br/><b>bold</b><br/>
+                            <i>italics</i></br/>
+                            <h1>heading 1</h1>
+                            <h2>heading 2</h2>
+                            <h3>heading 3</h3>
+
+                    </section>
+
+                    <section id="online">
+                        <h1>Viewing our webpages online</h1>
+
+                        <a href="http://block1.codeed.org/img/lesson1/save_to_web.jpg"><img src="http://block1.codeed.org/img/lesson1/save_to_web.jpg" style="max-width: 600px; width: 100%;" /></a><br /></br />
+                        <p>To save to the web, click here.</p>
+
+                        <img src="http://block1.codeed.org/img/lesson1/conversion.jpg" style="display: block; margin: 0 auto; width: 100%; max-width: 600px;" />
+                    </section>
+
+
+                </div>
+
+            </div><!-- /row -->
+
+        </div><!-- /#container -->
+
+
+
+    <!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>Designed using <a href="https://github.com/twitter/bootstrap/wiki">Twitter Bootstrap</a>.</p>
+        <ul class="footer-links">
+          <li><a href="mailto:block1@codeed.org?subject=help!">Get Help</a></li>
+          <li><a href="http://block2.codeed.org">Visit Block2</a></li>
+        </ul>
+      </div>
+    </footer>
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/google-code-prettify/prettify.js"></script>
+    <script src="/js/bootstrap-transition.js"></script>
+    <script src="/js/bootstrap-alert.js"></script>
+    <script src="/js/bootstrap-modal.js"></script>
+    <script src="/js/bootstrap-dropdown.js"></script>
+    <script src="/js/bootstrap-scrollspy.js"></script>
+    <script src="/js/bootstrap-tab.js"></script>
+    <script src="/js/bootstrap-tooltip.js"></script>
+    <script src="/js/bootstrap-popover.js"></script>
+    <script src="/js/bootstrap-button.js"></script>
+    <script src="/js/bootstrap-collapse.js"></script>
+    <script src="/js/bootstrap-carousel.js"></script>
+    <script src="/js/bootstrap-typeahead.js"></script>
+    <script src="/js/bootstrap-affix.js"></script>
+    <script src="/js/application.js"></script>
+    <script src="/js/codeed.js"></script>
+
+    </body>
+</html>

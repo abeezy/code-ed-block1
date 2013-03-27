@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CodeEd: Code Wizard!</title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/css/bootstrap.css" rel="stylesheet">
+        <link href="/css/bootstrap-responsive.css" rel="stylesheet">
+        <link href="/css/docs.css" rel="stylesheet">
+        <link href="/css/codeed.css" rel="stylesheet">
+        <link href="/js/google-code-prettify/prettify.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Navbar
+             ================================================== -->
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="brand" href="http://www.codeed.org/">CodeEd</a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li class="">
+                                <a href="/index.html">Home</a>
+                            </li>
+                            <li class="">
+                                <a href="/lesson1.html">Lesson 1</a>
+                            </li>
+                            <li class="">
+                                <a href="/lesson2.html">Lesson 2</a>
+                            </li>
+                            <li class="active">
+                                <a href="/wizard">HTML Wizard</a>
+                            </li>
+                            <li class="">
+                                <a href="/game.html">HTML Tag Game</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <header class="jumbotron subhead" id="overview">
+            <div class="container">
+                <h1>CodeEd Wizard</h1>
+                <p class="lead">You know, for code.</p>
+            </div>
+        </header>
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="span9">
+
+                    <section id="websites">
+                        <h3>Rendered HTML:</h3>
+                        <div id="rendered-html" style="border: dotted 1px grey; margin-bottom: 10px; padding: 10px;"><h1>hello world!</h1></div>
+
+                        <h3 style="margin-top: 40px;">HTML code:</h3>
+                        <pre id="color-coded" class="prettyprint linenums">&lt;h1&gt;hello world!&lt;/h1&gt;</pre>
+
+                        <form id="htmlize-form">
+                            <textarea id="plain-code" style="font-family: monospace; width: 100%; font-size: 24px; min-height: 200px;"><h1>hello world!</h1></textarea>
+                            <button type="button" id="render-button" class="btn btn-small" style="margin: 10px 0;">Save</button>
+                            <button type="button" id="html-button" class="btn btn-small" style="margin: 10px 0;">HTML</button>
+                            <button type="button" id="both-button" class="btn btn-small" style="margin: 10px 0;">Both</button>
+                            <button type="button" id="clear-button" class="btn btn-small" style="float: right; margin: 10px 0;">clear</button>
+                            <button type="button" id="decode-button" class="btn btn-small" style="float: right; margin: 10px 5px 10px 0;">decode</button>
+                            <button type="button" id="encode-button" class="btn btn-small" style="float: right; margin: 10px 5px 10px 0;">encode</button>
+                        </form>
+
+                    </section>
+                </div>
+
+            </div><!-- /row -->
+
+        </div><!-- /#container -->
+
+    <!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>Designed using <a href="https://github.com/twitter/bootstrap/wiki">Twitter Bootstrap</a>.</p>
+        <ul class="footer-links">
+          <li><a href="mailto:block1@codeed.org?subject=help!">Get Help</a></li>
+          <li><a href="http://block2.codeed.org">Visit Block2</a></li>
+        </ul>
+      </div>
+    </footer>
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/google-code-prettify/prettify.js"></script>
+    <script src="/js/bootstrap-transition.js"></script>
+    <script src="/js/bootstrap-alert.js"></script>
+    <script src="/js/bootstrap-modal.js"></script>
+    <script src="/js/bootstrap-dropdown.js"></script>
+    <script src="/js/bootstrap-scrollspy.js"></script>
+    <script src="/js/bootstrap-tab.js"></script>
+    <script src="/js/bootstrap-tooltip.js"></script>
+    <script src="/js/bootstrap-popover.js"></script>
+    <script src="/js/bootstrap-button.js"></script>
+    <script src="/js/bootstrap-collapse.js"></script>
+    <script src="/js/bootstrap-carousel.js"></script>
+    <script src="/js/bootstrap-typeahead.js"></script>
+    <script src="/js/bootstrap-affix.js"></script>
+    <script src="/js/application.js"></script>
+    <script src="/js/codeed.js"></script>
+    <script>
+        var $colorEl = $('#color-coded');
+        var $codeEl = $('#plain-code');
+        var $renderEl = $('#rendered-html');
+
+        function htmlColor(){
+            $colorEl.empty().text($codeEl.val());
+            prettyPrint();
+        }
+
+        function htmlRender(){
+            $renderEl.html($codeEl.val());
+        }
+
+        // On shift+enter render both.
+        $codeEl.keydown(function(e){
+            if (e.keyCode == 13 && e.shiftKey){
+                e.preventDefault();
+                htmlColor();
+                htmlRender();
+            }
+        });
+
+        $('#htmlize-form button').click(function(){
+            var $el = $(this);
+            var button = $el.attr('id').split('-')[0];
+            if (button == 'html'){
+                htmlColor();
+            }else if (button == 'render'){
+                htmlRender();
+            }else if (button == 'both'){
+                htmlColor();
+                htmlRender();
+            }else if (button == 'clear'){
+                $codeEl.val('');
+                htmlColor();
+                htmlRender();
+            }else if (button == 'encode'){
+                $codeEl.val($('<div/>').text($codeEl.val()).html());
+            }else if (button == 'decode'){
+                $codeEl.val($('<div/>').html($codeEl.val()).text());
+            }
+        });
+        $(function(){
+            $codeEl.focus();
+        });
+    </script>
+
+    </body>
+</html>

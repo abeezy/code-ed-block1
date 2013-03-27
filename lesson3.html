@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CodeEd: Block1</title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/bootstrap-responsive.css" rel="stylesheet">
+        <link href="css/docs.css" rel="stylesheet">
+        <link href="css/codeed.css" rel="stylesheet">
+        <link href="js/google-code-prettify/prettify.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Navbar
+             ================================================== -->
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="brand" href="http://www.codeed.org/">CodeEd</a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li class="">
+                                <a href="/index.html">Home</a>
+                            </li>
+                            <li class="">
+                                <a href="/lesson1.html">Lesson 1</a>
+                            </li>
+                            <li class="">
+                            	<a href="/lesson2.html">Lesson 2</a>
+                            </li>
+                            <li class="active">
+                            	<a href="/lesson3.html">Lesson 3</a>
+                            </li>
+                            <li class="">
+                                <a href="/wizard">HTML Wizard</a>
+                            </li>
+                            <li class="">
+                                <a href="/game.html">HTML Tag Game</a>
+                            </li>
+                            <li class="">
+                            	<a href="http://block2.codeed.org/lesson1.html">HTML Tag Cheat Sheet</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <header class="jumbotron subhead" id="overview">
+            <div class="container">
+                <h1>CodeEd</h1>
+                <p class="lead">Lesson 3</p>
+            </div>
+        </header>
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="span3 bs-docs-sidebar">
+                    <ul class="nav nav-list bs-docs-sidenav">
+                        <li><a href="#review"><i class="icon-chevron-right"></i> 1. Review</a></li>
+                        <li><a href="#nesting"><i class="icon-chevron-right"></i> 2. Nesting</a></li>
+                        <li><a href="#images"><i class="icon-chevron-right"></i> 3. Images</a></li>
+                        <li><a href="#links"><i class="icon-chevron-right"></i> 4. Links</a></li>
+                        <li><a href="#newpage"><i class="icon-chevron-right"></i> 5. Adding a New Page</a></li>
+                        <li><a href="#lists"><i class="icon-chevron-right"></i> 6. Lists</a></li>                        
+                        <li><a href="#youtube"><i class="icon-chevron-right"></i> 7. YouTube Videos</a></li>                        
+                    </ul>
+                </div>
+
+                <div class="span9">
+
+                    <section id="review">
+                        <h1>Review</h1>
+                 		<ul>
+                 			<li>Tags: elements</li>
+                 			<ul>
+                 				<li>opening tag</li>
+                 				<li>closing tag</li>
+                 			</ul>
+                 			<li>&lt;html&gt; tells the browser where the HTML starts and stops</li>
+							<li>&lt;head&gt; information about the document that isn't diplayed on the screen</li>
+							<li>&lt;title&gt; name of the document that will show up in the menu bar of the browser </li>
+							<li>&lt;body&gt; everything that is displayed in the browser </li>
+							<li>There are 6 levels of headings:</li>
+							<ul>
+								<li>&lt;h1&gt; would be the most important heading</li>
+								<li>&lt;h6&gt; is the least important heading</li>
+							</ul>		
+							<li>&lt;p&gt; paragraph</li>
+							<li>&lt;br/&gt; line break</li>
+							<li>&lt;hr/&gt; horizontal rule</li>
+							<li>&lt;b&gt; bold</li>
+							<li>&lt;i&gt; curly</li>
+							<li>&lt;u&gt; underlined</li>
+							<li>&lt;body bgcolor="value"&gt; background color</li>
+							<li>&lt;font color="value"&gt; font color</li>
+                 		</ul>
+                    </section>
+					
+					<section id="nesting">
+                        <h1>Nesting</h1>
+                        <p>
+                        	Q. What is nesting?<br />
+							A. placing one element inside another
+						</p>
+						<p>
+						We want: <b><i>Coding is for everyone!</i></b><br /><br />
+						This statement is bold and curly.<br /><br />
+						How do we make this happen?
+<pre style="width: 310px">
+&lt;b&gt;&lt;i&gt;Coding is for everyone!&lt;/i&gt;&lt;/b&gt;
+</pre>
+                        </p>
+                    </section>
+                    
+					
+                    <section id="images">
+                        <h1>Images</h1>
+                        <p>
+                        	<ul>
+                        		<li>&lt;img&gt; image element/tag</li>
+                        		<li>Attribute</li>
+								<ul>
+									<li>provides additional information about the elements</li>
+									<li>always goes in the opening tag</li>
+								</ul>	
+								<li>Format: name="value"</li>
+								<ul>
+									<li>src="url"</li>
+									<li>height="number"</li>
+									<li>remember to close the image tag with /></li>
+								</ul>	
+                        	</ul>
+                    </section>
+
+                    <section id="links">
+                        <h1>Links</h1>
+                        <p>
+						A link is text that redirects you to another page when you click on it
+						</p>
+						<ul>
+							<li>&lt;a&gt; needs an opening and closing tag</li>
+						</ul>
+							<li>Try &lt;a>CodeEd is awesome!&gt;/a&gt;</li>
+							<li>We need the href attribute</li>
+							<ul>
+								<li>&lt;a href="url">name of link&lt;/a&gt;</li>
+								<li>&lt;a href="http://block1codeed.org/index.html">CodeEd rocks!&lt;/a&gt;</li>	
+							</ul>
+							<li>Remember to always:</li>	
+							<ul>
+								<li>Use http:// in the URL</li>
+								<li>Put the URL in quotes or the link won't work</li>
+							</ul>
+						</ul>
+						<p>
+						<b>Your Turn!</b>
+						<br /><br />
+						Using what you just learned about nesting, images and hyperlinks, make an image into a link!
+<pre style="width: 310px">
+&lt;a href="URL"&gt;&lt;img src="URL" /&gt;&lt;/a&gt;
+</pre>
+						</p>		
+                    </section>
+
+                    <section id="newpage">
+                        <h1>Adding a New Page</h1>
+							<ol>
+								<li>Click on the "New" icon or press ctrl + N</li>
+								<li>This will open an untitled page</li>
+								<li>Name the file page2.html (or whatever you want)</li>		
+							</ol>
+						<p>
+							What do we need in an HTML document?
+							<ul>
+								<li>&lt;html&gt;</li>
+								<li>&lt;head&gt;</li>
+								<li>&lt;title&gt;</li>
+								<li>&lt;body&gt;</li>
+							</ul>
+							Don't forget the closing tags....
+						</p>
+						<p>
+						Q. How would we link our web pages together?<br />
+						A. By using &lt;a&gt; !
+<pre style="width: 310px">
+&lt;a href="page2.html"&gt;Page 2&lt;/a&gt;
+</pre>
+						</p>
+					</section>
+					
+					<section id="lists">
+                        <h1>Lists</h1>
+						<p>
+							Let's make a list of why coding is awesome!
+							<ul>
+								<li>&lt;ul&gt;unordered list</li>
+								<li>&lt;li&gt;list item</li>
+							</ul>
+							Q. How can we make a list that shows our top three favorite foods? This would be called an ordered list. How would we make an ordered list?<br />
+							A. &lt;ol&gt;
+						</p>
+					</section>
+					
+					<section id="youtube">
+                        <h1>Embedding YouTube Videos</h1>
+						<p>
+							<ol>
+								<li>Click the Share Button<br />
+								<img src="/img/badgers1.png" style="border: 2px solid #ccc;" /></li>
+								<br /><br />
+								<li>Click the Embed Button<br />
+								<img src="/img/badgers2.png" style="border: 2px solid #ccc;" /></li>
+								<br /><br />
+								<li>Copy the code and paste it into your page in Geanie<br />
+								<img src="/img/badgers3.png" style="border: 2px solid #ccc;"/></li>
+							</ol>
+						</p>
+					</section>
+
+
+                </div>
+
+            </div><!-- /row -->
+
+        </div><!-- /#container -->
+
+
+
+    <!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>Designed using <a href="https://github.com/twitter/bootstrap/wiki">Twitter Bootstrap</a>.</p>
+        <ul class="footer-links">
+          <li><a href="mailto:block1@codeed.org?subject=help!">Get Help</a></li>
+          <li><a href="http://block2.codeed.org">Visit Block2</a></li>
+        </ul>
+      </div>
+    </footer>
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/google-code-prettify/prettify.js"></script>
+    <script src="/js/bootstrap-transition.js"></script>
+    <script src="/js/bootstrap-alert.js"></script>
+    <script src="/js/bootstrap-modal.js"></script>
+    <script src="/js/bootstrap-dropdown.js"></script>
+    <script src="/js/bootstrap-scrollspy.js"></script>
+    <script src="/js/bootstrap-tab.js"></script>
+    <script src="/js/bootstrap-tooltip.js"></script>
+    <script src="/js/bootstrap-popover.js"></script>
+    <script src="/js/bootstrap-button.js"></script>
+    <script src="/js/bootstrap-collapse.js"></script>
+    <script src="/js/bootstrap-carousel.js"></script>
+    <script src="/js/bootstrap-typeahead.js"></script>
+    <script src="/js/bootstrap-affix.js"></script>
+    <script src="/js/application.js"></script>
+    <script src="/js/codeed.js"></script>
+
+    </body>
+</html>

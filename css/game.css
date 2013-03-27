@@ -1,0 +1,154 @@
+body {
+    font-family: courier;
+    font-size: 18px;
+}
+
+h1 {
+    font-family: Arial;
+    padding: 10px 20px;
+}
+
+#tags {
+    float: left;
+}
+
+.tag {
+    padding: 10px;
+    margin: 10px;
+    width: 100px;
+    text-align: center;
+    cursor: move;
+    z-index: 10;
+    /* Prevent the text contents of draggable elements from being selectable. */
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#htmlOpen,
+#htmlClose {
+    color: red;
+}
+
+#headOpen,
+#headClose {
+    color: green;
+}
+
+#titleOpen,
+#titleClose {
+    color: blue;
+}
+
+#bodyOpen,
+#bodyClose {
+    color: purple;
+}
+
+#hOpen,
+#hClose {
+    color: orange;
+}
+
+#dropzone {
+    border: 2px solid #000;
+    height: 800px;
+    width: 800px;
+    margin-left: 150px;
+    position: relative;
+}
+
+.droparea {
+    border: 1px dotted #000;
+    height: 50px;
+    width: 130px;
+    margin: 10px;
+}
+
+.correct {
+    border: 2px solid green;
+}
+
+#htmlOpenDrop,
+#htmlCloseDrop,
+#headOpenDrop,
+#headCloseDrop,
+#titleOpenDrop,
+#titleCloseDrop,
+#title,
+#bodyOpenDrop,
+#hcontent,
+#hOpenDrop,
+#hCloseDrop,
+#body,
+#bodyCloseDrop {
+    position: absolute;
+}
+
+#htmlOpenDrop {
+    top: 10px;
+    left: 10px;
+}
+
+#headOpenDrop {
+    top: 80px;
+    left: 50px;
+}
+
+#titleOpenDrop {
+    top: 150px;
+    left: 100px;
+}
+
+#title {
+    top: 175px;
+    left: 260px;
+}
+
+#titleCloseDrop {
+    top: 150px;
+    left: 500px;
+}
+
+#headCloseDrop {
+    top: 220px;
+    left: 50px;
+}
+
+#bodyOpenDrop {
+    top: 290px;
+    left: 50px;
+}
+
+#hOpenDrop {
+    top: 360px;
+    left: 100px;
+}
+
+#hcontent {
+    top: 385px;
+    left: 260px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#hCloseDrop {
+    top: 360px;
+    left: 550px;
+}
+
+#body {
+    top: 470px;
+    left: 110px;
+}
+
+#bodyCloseDrop {
+    top: 550px;
+    left: 50px;
+}
+
+#htmlCloseDrop {
+    top: 620px;
+    left: 10px;
+}
